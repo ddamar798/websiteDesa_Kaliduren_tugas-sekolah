@@ -1,0 +1,427 @@
+body {
+    font-family: sans-serif;
+     margin: 0; /*menghapus margin Default */
+}
+
+/* NAVBAR & Header // (kalo mau rubah sesuatu di bagian ini tanya dulu ya...) @damar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00c4cc;
+    padding: 10px 50px;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.logo p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f0f0f0;
+}
+
+.nav-links li .active {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px; /* Menambahkan padding ke bawah untuk garis */
+}
+
+.content {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+}
+
+/* elemen overlay untuk gambar latar belakang */
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(aset/header1.png);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); /* Memberikan filter gelap pada gambar */
+    z-index: 1; /* Posisikan di bawah teks */
+}
+
+.intro {
+    position: relative;
+    z-index: 2; /* Posisikan di atas overlay */
+    padding-top: 50px; /* Menyesuaikan posisi teks agar berada di tengah */
+}
+
+.intro h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.intro h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.intro p {
+    color: #f5f5f5;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* END NAVBAR & HEADER */
+
+/* ======== Sambutan Kepala Desa ========= */
+/* @Okta | kurang rapikan foto kadesnya aja, nek fotone gamau keluar cari foto lain atau cara lain gapapa yang penting jadi... */
+.sambutan {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.sambutan h2 {
+    color: #d32f2f;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.sambutan-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sambutan-text {
+    text-align: left;
+}
+
+.name-tag {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.name-tag h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.name-tag p {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.sambutan-text h4 {
+    color: #d32f2f;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.sambutan-text p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* untuk tampilan mobile */
+.sambutan {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+.sambutan h2 {
+    color: #d32f2f;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.sambutan-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sambutan-text {
+    text-align: left;
+    max-width: 600px; /* Batasi lebar teks agar tidak terlalu panjang */
+}
+
+.name-tag {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.name-tag h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.name-tag p {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.sambutan-text h4 {
+    color: #d32f2f;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.sambutan-text p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsiveness untuk tampilan mobile */
+@media (max-width: 768px) {
+    .sambutan-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sambutan-text {
+        text-align: center;
+    }
+}
+
+/* === STYLING PETA DESA ==== */
+.peta-desa {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.peta-header h2 {
+    color: #d32f2f;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.peta-header p {
+    color: #d32f2f;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.map-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memisahkan peta dari latar belakang */
+    border-radius: 8px;
+    overflow: hidden; /* menjaga border-radius pada iframe */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px; /* bisa di sesuaikan ya, jika kurang pas | @okta */
+}
+
+/* ===== BUAT STYLING SOTK DI BAWAH SINI YA @okta ====== */
+
+/* ==================== */
+
+/* ===== Administrasi Penduduk ===== */
+/* IKI udah semua, tapi nek ada sesuatu sing pingin tok ubah/optimasi silahkan aja */
+.administrasi-penduduk {
+    padding: 50px 20px;
+    background-color: #f1efef; 
+}
+
+.header-admin {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.header-admin h2 {
+    color: #d32f2f;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.header-admin p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+    /* Mengatur 2 kolom dengan ukuran yang sama dan jarak antar kolom */
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.data-item .count {
+    background-color: #88B9B9;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-item .label {
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Responsiveness untuk tampilan mobile */
+@media (max-width: 768px) {
+    .data-grid {
+        grid-template-columns: 1fr; /* Ubah menjadi 1 kolom pada layar kecil */
+    }
+
+    .data-item {
+        justify-content: center; /* Posisikan di tengah pada mobile */
+    }
+}
+
+/* ===== BUAT STYLING APB DESA DI BAWAH SINI ya @Okta  ==== */
+
+
+/* xxxxxxxxxxxxxxx */
+
+/* BUAT STYLING POTENSI DESA DISINI YA.... */
+
+
+/* xxxxxxxxxxxxxxx */
+
+/* ==== BUAT STYLING GALERY DESA DISINII === */
+
+/* xxxxxxxxxxxxxxx */
+
+/* ==== FOOTER ===== */
+.main-footer {
+    background-color: #90caf9;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column a {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+/* Responsiveness mobile*/
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
