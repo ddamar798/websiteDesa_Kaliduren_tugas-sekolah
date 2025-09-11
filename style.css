@@ -40,13 +40,10 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #f0f0f0;
+    color: #070707;
 }
 
-.nav-links li .active {
-    border-bottom: 3px solid #fff;
-    padding-bottom: 5px; /* Menambahkan padding ke bawah untuk garis */
-}
+
 
 .content {
     text-align: center;
