@@ -97,60 +97,78 @@ body {
 /* END NAVBAR & HEADER */
 
 /* ======ini bagian jelajahi desa==== */ /*maaf nek kodingan ku ki acak-acakan*/
-.explore-text h2 {
-    color: red;
-    text-align: left;
-    font-size: 40px;
+.explore-desa {
+    display: flex; /* Menggunakan Flexbox untuk tata letak utama */
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 50px; /* Jarak antara teks dan item */
+    max-width: 1200px;
     margin: 0 auto;
-    margin-left: 20px;
+}
+
+.explore-text {
+    flex: 1; /* Memberikan ruang yang fleksibel */
+    max-width: 500px;
+    text-align: left;
+}
+
+.explore-text h2 {
+    color: #d32f2f; /* Mengubah warna dari red ke #d32f2f */
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .explore-text p {
-    color: red;
-    width: 600px;
-    font-size: 25px;
-    margin: 0 auto;
-    margin-left: 20px;
-    text-align: left;
+    color: #333; /* Mengubah warna dari red ke #333 agar lebih mudah dibaca */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.explore-items {
+    flex: 1; /* Memberikan ruang yang fleksibel untuk items */
+    display: flex;
+    flex-direction: column; /* Menumpuk baris item secara vertikal */
+    gap: 30px;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-around; /* Memberikan jarak yang merata di antara item */
+    align-items: center;
+    gap: 20px;
+}
+
+.item {
     text-align: center;
 }
 
-.item1 {
-    color: red;
-    margin-left: 800px;
-    width: 100px;
+.item img {
+    width: 150px; /* Ukuran gambar disesuaikan */
+    height: auto;
+    background-color: #e1e0e0; /* Warna latar belakang */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.2);
 }
 
-.item2 {
-    color: red;
+.item h3 {
+    color: #d32f2f; /* Warna teks */
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-.item3 {
-    color: red;
-    margin-left: 910px;
-}
+/* Responsiveness untuk tampilan mobile */
+@media (max-width: 900px) {
+    .explore-desa {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom */
+        text-align: center;
+        gap: 30px;
+    }
 
-.item4 {
-    color: red;
-    margin-left: 250px;
-}
-
-.bank {
-    margin: 0 auto;
-    columns:2; 
-    gap: 5px;
-    max-width: 1500px;
-    height: 300px;
-    text-align: center;
-}
-
-.document {
-    margin: 0 auto;
-    columns:2; 
-    gap: 5px;
-    max-width: 1500px;
-    height: 300px;
-    text-align: center;
+    .explore-text {
+        text-align: center;
+    }
 }
 
 /* ======== Sambutan Kepala Desa ========= */
