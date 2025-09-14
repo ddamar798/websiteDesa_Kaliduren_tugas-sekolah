@@ -36,24 +36,23 @@
     <!-- EXPLORE DESA -->
     <!-- @Okta, tolong ini dikasih styling pake CSS & jika mau nambah tag HTML/ class baru silahkan, bebas! -->
     <section class="explore-desa" id="explore-desa">
-    <div class="explore-text">
+    <div class="explore-items"> <!--maaf nek kodingan ku ki acak-acakan-->
+        <div class="bank"> <!--bagian ini untuk gambar dan bordernya--> 
+        <img src="aset/bank.png" alt=" gambar Profil desa" width="200" height="200" style="box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.441); background-color: rgb(225, 224, 224); margin-left: 750px; margin-top: 50px;">
+        <div class="item1"><h3>Profil Desa</h3></div>
+        <img src="aset/file.png" alt="gambar PPID" width="200" height="200" style="box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.441); background-color: rgb(225, 224, 224); margin-top: 50px;">
+        <div class="item2"><h3>PPID</h3></div>
+        </div>
+        <div class="explore-text"> <!--bagian ini untuk tulisannya-->
         <h2>Jelajahi Desa</h2>
         <p>Melalui website ini Anda dapat menjelajahi segala hal yang terkait dengan Desa. Aspek pemerintahan, penduduk, demografi, potensi Desa, dan juga berita tentang Desa.</p>
-    </div>
-    <div class="explore-items">
-        <div class="item">
-            <h3>Profil Desa</h3>
         </div>
-        <div class="item">
-            <h3>PPID</h3>
+        <div class="document"> <!--bagian ini untuk gambar dan bordernya-->
+        <img src="aset/profit.png" alt="gambar Infografis" width="200" height="200" style="box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.441); background-color: rgb(225, 224, 224); margin-left: 850px; margin-top: 50px;">
+        <div class="item3"><h3>Infografis</h3></div>
+        <img src="aset/like.png" alt="gambar IDM" width="200" height="200" style="box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.441); background-color: rgb(225, 224, 224); margin-top: 50px; margin-left: 250px;">
+        <div class="item4"><h3>IDM</h3></div>
         </div>
-        <div class="item">
-            <h3>Infografis</h3>
-        </div>
-        <div class="item">
-            <h3>IDM</h3>
-        </div>
-    </div>
 </section>
     <!-- END EXPLORE DESA -->
 
@@ -62,9 +61,7 @@
     <section class="sambutan">
     <h2>Sambutan Kepala Desa Kaliduren</h2>
     <div class="sambutan-content">
-        <div class="photo">
-            <img src="assets/kepaladesa.jpeg" alt="Foto Kepala Desa">
-        </div>
+        <div class="photo"></div> <!--ini bagian untuk foto kepala desa-->
         <div class="sambutan-text">
             <div class="name-tag">
                 <h3>Sumanto</h3>
@@ -93,9 +90,30 @@
     <!-- ====== SOTK ====== -->
 
      <!--  @okta | bagian ini belum tak apa apain soalnya belum ada gambarnya, nanti kamu minta gambarnya ke naysila trus sekalian styling textnya biar seperti desain ya... -->
-
+    <section class="SOTK" id="pangkat">
+    <div class="judul">
     <h1>SOTK</h1>
     <h2>Struktur Organisasi dan Tata Kerja Desa Kersik</h2>
+    </div>
+    <div class="orang"> <!--ini bagian foto-foto orang dengan kepentingan Desa-->
+        <img src="aset/orang1.jpeg" alt="Kegiatan 1" width="300" height="300">
+        <h2>Rizki Setiawan</h2>
+        <h3>Kepala Urusan</h3>
+        <img src="aset/orang2.jpeg" alt="Kegiatan 2" width="300" height="300">
+        <h2>Juliantoro</h2>
+        <h3>Sekertaris</h3>
+        <img src="aset/orang3.jpeg" alt="Kegiatan 3" width="300" height="300">
+        <h2>Susi Ramadhani</h2>
+        <h3>Kauk Keuangan</h3>
+        <img src="aset/orang4.jpeg" alt="Kegiatan 4" width="300" height="300">
+        <h2>Agus Wicaksono</h2>
+        <h3>Kauk Kerja</h3>
+        <img src="aset/orang5.jpeg" alt="kegiatan 5" width="300" height="300">
+        <h2>Susilo</h2>
+        <h3>Sekertaris</h3>
+
+    </div>
+    </section>
     <!-- END SOTK -->
 
     <!-- === Adsminitrasi Penduduk ====== -->
@@ -139,15 +157,20 @@
 
     <!-- @okta | iki belum tak buat calss & css , nanti kamu buat class & css nya sendiri aja ya ndak malah acak acakan... | iki boleh tok rubah terserahmu biar sesuai sama desain -->
      <section class="apb-desa" id="apb-desa">
-        <h1>APB DESA</h1>
+        <div class="tulisan"> <!--ini bagian tentang APB desa-->
+        <h1>APB DESA 2025</h1>
         <h2>Akses cepat dan transparan terhadap APB Desa serta proyek pembangunan</h2>
-
+        </div>
+        <div class="border1"></div>
+        <div class="harga1" id="harga1">
         <h3>Pendapatan Desa</h3>
         <h1>Rp.39.000.000</h1>
-
+        </div>
+        <div class="statistik"></div>
+        <div class="harga2" id="harga2">
         <h3>Belanja Desa</h3>
         <h1>Rp.37.000.000</h1>
-
+        </div>
      </section>
 
      <!-- end apb desa -->
@@ -158,7 +181,13 @@
      <section class="potensi-desa">
      <h1>POTENSI DESA</h1>
      <p>Potensi dan kemajuan Desa di berbagai bidang (ekonomi,perkebunan dan lain-lain)</p>
-
+    <div class="potensi"> <!--ini bagian foto sumber daya alam-->
+        <img src="aset/sumber1.jpeg" alt="Kegiatan 2" width="250" height="250">
+        <img src="aset/sumber2.jpeg" alt="Kegiatan 3" width="225" height="250">
+        <img src="aset/sumber3.jpeg" alt="Kegiatan 4" width="250" height="250">
+        <img src="aset/sumber4.jpeg" alt="Kegiatan 5" width="250" height="250">
+        <img src="aset/sumber5.jpeg" alt="kegiatan 6" width="250" height="250">
+    </div>
     </section>
         <!-- end potensi desa -->
 
@@ -168,11 +197,14 @@
     <section class="galeri-desa">
         <h1>GALERI DESA</h1>
         <p>Menampilkan kegiatan-kegiatan yang berlangsung di desa</p>
-        <!-- <div class="gallery">
-            <img src="image1.jpg" alt="Kegiatan 1">  |
-            <img src="image2.jpg" alt="Kegiatan 2">  | IKI CUMAN CONTOH TOK HAPUS ATAU GANTI GAPAPA 
-            <img src="image3.jpg" alt="Kegiatan 3">  |
-        </div> -->
+        <div class="gallery"> <!--ini bagian foto sumber daya alam-->
+            <img src="aset/image1.jpeg" alt="Kegiatan 2" width="auto" height="300">
+            <img src="aset/image2.jpeg" alt="Kegiatan 2" width="auto" height="300">
+            <img src="aset/image3.jpeg" alt="Kegiatan 3" width="auto" height="300">
+            <img src="aset/image4.jpeg" alt="Kegiatan 4" width="auto" height="200">
+            <img src="aset/image5.jpeg" alt="Kegiatan 5" width="auto" height="200">
+            <img src="aset/image6.jpeg" alt="kegiatan 6" width="auto" height="200">
+        </div>
     </section>
     <!-- end galeri desa -->
 

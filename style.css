@@ -96,6 +96,63 @@ body {
 
 /* END NAVBAR & HEADER */
 
+/* ======ini bagian jelajahi desa==== */ /*maaf nek kodingan ku ki acak-acakan*/
+.explore-text h2 {
+    color: red;
+    text-align: left;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.explore-text p {
+    color: red;
+    width: 600px;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-left: 20px;
+    text-align: left;
+    text-align: center;
+}
+
+.item1 {
+    color: red;
+    margin-left: 800px;
+    width: 100px;
+}
+
+.item2 {
+    color: red;
+}
+
+.item3 {
+    color: red;
+    margin-left: 910px;
+}
+
+.item4 {
+    color: red;
+    margin-left: 250px;
+}
+
+.bank {
+    margin: 0 auto;
+    columns:2; 
+    gap: 5px;
+    max-width: 1500px;
+    height: 300px;
+    text-align: center;
+}
+
+.document {
+    margin: 0 auto;
+    columns:2; 
+    gap: 5px;
+    max-width: 1500px;
+    height: 300px;
+    text-align: center;
+}
+
 /* ======== Sambutan Kepala Desa ========= */
 /* @Okta | kurang rapikan foto kadesnya aja, nek fotone gamau keluar cari foto lain atau cara lain gapapa yang penting jadi... */
 .sambutan {
@@ -116,6 +173,15 @@ body {
     gap: 50px;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.photo {
+    border-radius: 1000px;
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    background-image: url(aset/kepaladesa.jpeg); /* gambar pak kades*/
+    background-size: cover;
 }
 
 .sambutan-text {
@@ -175,6 +241,15 @@ body {
     gap: 50px;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.photo {
+    border-radius: 1000px;
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    background-image: url(aset/kepaladesa.jpeg);
+    background-size: cover;
 }
 
 .sambutan-text {
@@ -261,6 +336,26 @@ body {
 }
 
 /* ===== BUAT STYLING SOTK DI BAWAH SINI YA @okta ====== */
+.SOTK {
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.judul {
+    margin: 0 auto;
+    color: red;
+}
+
+.orang {  /*ini untuk barisan gambar orang di SOTK*/
+    margin: 0 auto;
+    columns:5; 
+    gap: 5px;
+    max-width: 1500px;
+    margin-bottom: 100px;
+    height: 400px;
+    text-align: center;
+}
+
 
 /* ==================== */
 
@@ -333,17 +428,115 @@ body {
     }
 }
 
-/* ===== BUAT STYLING APB DESA DI BAWAH SINI ya @Okta  ==== */
+/* ===== BUAT STYLING APB DESA DI BAWAH SINI ya @Okta  ==== */ /*maaf nek kodingan ku ki acak-acakan*/
+.apb-desa {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto 0px;
+    text-align: center;
+}
 
+.tulisan h1 { /* untuk judul APB */
+    color: rgb(114, 148, 145);
+    padding-left: 75px;
+}
+
+.tulisan h2 {
+    max-width: 800px;
+    margin-left: 0px auto 50px;
+    text-align: center;
+    padding-left: 315px;
+}
+
+.statistik {
+    height: 150px;
+    width: 150px;
+    background-image: url(aset/bar-chart.png);
+    background-size: cover;
+}
+
+.harga1 { /* border dengan shadow dan dalamnya tulisan*/
+    border: solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px black;
+    padding-left: 20px;
+    margin-left: 300px;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
+
+.harga2 {
+    border: solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px black;
+    padding-left: 20px;
+    margin-left: 300px;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
+
+.harga1 h3 {
+    width: 157px;
+    margin-right: 600px;
+}
+
+.harga1 h1 {
+    color: rgb(114, 148, 145);
+    margin-right: 600px;
+}
+
+.harga2 h1 {
+    color: rgb(114, 148, 145);
+    margin-right: 600px;
+}
+
+.harga2 h3 {
+    width: 120px;
+    margin-right: 600px;
+}
 
 /* xxxxxxxxxxxxxxx */
 
 /* BUAT STYLING POTENSI DESA DISINI YA.... */
+.potensi-desa { /* untuk judul potensi */
+    color: #d32f2f;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.potensi-desa p {
+    font-size: 20px;
+}
+
+.potensi { /*untuk mengurutkan gambar dan jumlah banjar 3*/
+    margin: 0 auto;
+    gap: 30px;
+    columns: repeat(3, 1fr);
+}
 
 
 /* xxxxxxxxxxxxxxx */
 
 /* ==== BUAT STYLING GALERY DESA DISINII === */
+.galeri-desa { /* untuk judul galeri */
+    color: #d32f2f;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.galeri-desa p {
+    font-size: 20px;
+}
+
+.gallery { /*untuk mengurutkan gambar dan jumlah banjar 3*/
+    margin: 0 auto;
+    gap: 30px;
+    columns: repeat(3, 1fr);
+}
 
 /* xxxxxxxxxxxxxxx */
 
